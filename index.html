@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qalyn calculator</title>
+</head>
+
+<body>
+    <div class="column"></div>
+    <div class="column">
+    <div class="container">
+        <h1 class="header">Qalyn calculator</h1>
+        <div class="tooltip"> <h3>GIRLS DECIDE THE PRICE FOR THE GROOM AND BOYS DECIDE THE PRICE FOR THE BRIDE!</h3>
+          <span class="tooltiptext">We are going to dive deep into national history and help our ancestors decide/calculate the bride price (Қалың мал).</span>
+        </div>
+
+        <h3 class="calculator__subtitle">Bride's/Groom's name</h3>
+        <input type="text" class="name">
+
+        <h3 class="calculator__subtitle">Starting bid</h3>
+        <input type="number" class="starting-bid">
+
+        <h3 class="calculator__subtitle">Bride's/Groom's education</h3>
+        <select class="Brides-Grooms-education">
+          <option> </option>
+          <option class="education-option">Undergraduate degree</option>
+          <option class="education-option">College degree</option>
+          <option class="education-option">High school degree</option>
+          <option class="education-option">Middle school degree</option>
+        </select>
+
+
+
+        <h3 class="calculator__subtitle">Bride's/Groom's family net worth</h3>
+        <select class="family-net">
+          <option> </option>
+          <option class="family-option">More than 100,000$</option>
+          <option class="family-option">Between 50,000$ and 100,000$</option>
+          <option class="family-option">Less than 50,000$</option>
+        </select>
+
+        
+<br><br><br>
+
+
+
+<h3 class="calculator__subtitle">Bride's/Groom's skills</h3>
+
+    <label for="skill1" class="container">
+        <input type="checkbox" id ="skill1" value="100">
+        <span class="checkmark"></span>
+        Playing on dombra (+100$)
+      </label>
+
+      <br>
+
+      <label for="skill2" class="container">
+        <input type="checkbox" id ="skill2" value="200">
+        <span class="checkmark"></span>
+        Good cook (+200$)
+      </label>
+
+      <br>
+
+      <label for="skill3" class="container">
+        <input type="checkbox" id ="skill3" value="150">
+        <span class="checkmark"></span>
+        Easygoing character (+150$)
+      </label>
+
+      <br>
+      
+      <label for="skill4" class="container">
+        <input type="checkbox" id ="skill4" value="100">
+        <span class="checkmark"></span>
+        Sings well (+100$)
+      </label>
+      
+<br>
+   
+<h3 class="calculator__subtitle">Bride's/Groom's age</h3>
+<div>
+    <form action="" id="agefound" onsubmit="return false;">
+        <div class="cont_order">       
+                <label for="" class="radiolabel">
+                    <input type="radio" name="agecount" value="18">Between 18-23 
+                </label>  <br>
+                <label for="" class="radiolabel">
+                    <input type="radio" name="agecount" value="24" > Between 24-27
+                </label> <br>
+                <label for="" class="radiolabel">
+                    <input type="radio" name="agecount" value="28" > 28+
+                </label> <br>
+                
+                <br>
+            </div>
+
+
+
+                <h3 class="calculator__subtitle">Bride's/Groom's reputation</h3>
+
+                  <div>
+                    <br />
+                    <input type="checkbox"class="gossip">Gossips about his/her parent's attitude
+                    <br />
+                    <input type="checkbox"class="gossip">Gossips about his/her character 
+                    <br />
+                    <input type="checkbox" class="gossip">General gossips around his/her person
+                    <br />
+                  </div>
+
+                <h3 class="calculator__subtitle">Love letter</h3>
+                <textarea maxlength="500" class="love-letter"> </textarea>
+                 
+
+                  <br>
+                <br>
+      <button id="submit-quote">Calculate Price</button>
+    
+  
+      <div class="calculator calculator__your-quote">
+        <h2 class="calculator__title">Your Price For</h2>
+        <div class="out">Bride's/Groom's name</div><h3 class="price">&#36;...</h3>
+        <div class="loveletter">Love letter:</div>
+    
+      </div>
+    </div>
+    
+      <br>
+    </div>
+</div>
+<div class="column"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
